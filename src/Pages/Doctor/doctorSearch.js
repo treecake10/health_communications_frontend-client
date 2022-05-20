@@ -91,26 +91,26 @@ function DoctorSearch() {
     */
     useEffect(() => {
 		
-	    if (Object.keys(foundApprovedDoc).length > 0){
+    	if (Object.keys(foundApprovedDoc).length > 0) {
 
-			let addDoctor = true;  
-			
-			listOfDoctors.forEach(e => {
+	    let addDoctor = true;  
 
-                // The doctor must be unique to be included in the doctor card list
-				if (e._id != undefined && e._id == foundApprovedDoc._id) {
-					addDoctor = false; 
-				}
+	    listOfDoctors.forEach(e => {
 
-			});
-            
-			if (addDoctor){
-				setListOfDoctors([...listOfDoctors, foundApprovedDoc]);
-			}
-
+	        // The doctor must be unique to be included in the doctor card list
+		if (e._id != undefined && e._id == foundApprovedDoc._id) {
+		    addDoctor = false; 
 		}
-		
-	}, [foundApprovedDoc]);
+
+	    });
+
+	    if (addDoctor){
+	        setListOfDoctors([...listOfDoctors, foundApprovedDoc]);
+	    }
+
+        }
+
+    }, [foundApprovedDoc]);
 
     useEffect(() => {
         
