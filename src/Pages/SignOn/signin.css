@@ -1,0 +1,134 @@
+.main {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 90px 0 90px 0;
+    background-color: orangered;
+}
+
+.main-inner1 {
+    display: flex !important;
+    justify-content: center;
+    height: 85vh;
+    width: 35%;
+    box-shadow: 7px 7px 5px rgba(68,68,68,0.4);
+    border-radius: 4%;
+    background-color: rgb(255,225,53);
+    flex-direction: column;
+    margin: auto;
+}
+
+.main-inner2 {
+    display: flex !important;
+    justify-content: center;
+    height: 120vh;
+    width: 35%;
+    box-shadow: 7px 7px 5px rgba(68,68,68,0.4);
+    border-radius: 4%;
+    background-color: rgb(255,225,53);
+    flex-direction: column;
+    margin: auto;
+}
+
+.company-logo {
+    height: 18vh;
+    margin-top: 2vh;
+}
+
+.company-name {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.firstName-container {
+    padding-top: 20px;
+}
+
+.middleName-container {
+    padding-top: 20px;
+}
+
+.lastName-container {
+    padding-top: 20px;
+}
+
+.email-container {
+    padding-top: 20px;
+}
+
+.password-container {
+    padding-top: 10px;
+}
+
+.btn-container {
+    padding-top: 10px;
+   
+}
+
+.button-login {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(242,133,0);
+    color: white;
+    font-size: 25px;
+}
+
+.link-signUp {
+    color: blue;
+}
+
+.link-forgotPass {
+    color: blue;
+}
+
+.firstName {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.middleName {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.lastName {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.email {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.password {
+    height: 50px;
+    width: 380px;
+    border-radius: 60px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.link {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p {
+    color: red;
+}

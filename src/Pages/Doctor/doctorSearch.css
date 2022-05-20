@@ -1,0 +1,66 @@
+.modal-content {
+    height: 500px;
+    vertical-align: middle;
+}
+
+.Doctors-card {
+    padding: 10%;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 20%);
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    overflow-y: auto;
+    background: linear-gradient(45deg, #ff8a00 30%, #DD4C4F 100%);
+}
+
+.search-label {
+    
+    position: relative;
+}
+
+.back-button {
+    margin-top: 2vh;
+    
+}
+
+.cancel-AppntModal {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.back-button:hover {
+    transform: scale(1.02);
+    font-weight: bold;
+}
+
+.nextButton {
+    border-radius: 20px;
+    background-color: #FF5700;
+    width: 4vw;
+    height: 4vh;
+    color: white;
+    font-weight: 600;
+}
+
+.nextButton:hover {
+    background-color: #ff4500;
+    transform: scale(1.02);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 2400px) {
+    .search-label {
+        margin-top: -15vh;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .custom-select {
+        margin-left: -20vw;
+    }
+}
