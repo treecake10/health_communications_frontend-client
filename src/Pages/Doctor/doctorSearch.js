@@ -206,7 +206,7 @@ function DoctorSearch() {
     // Find the patients' full name by grabbing both their first and last names in the user info document
     const getPatientFullName = async () => {
 
-        const resp = axios.get(`https://health-communications.herokuapp.com/users/getUserInfo/${userId}`);
+        const resp = axios.get(`https://health-communications-backend.onrender.com/users/getUserInfo/${userId}`);
 
         resp.then((response) => {
             setFname(response.data[0].firstName);
@@ -226,7 +226,7 @@ function DoctorSearch() {
     */
     const getPCP = async () => {
 
-        const resp = axios.get(`https://health-communications.herokuapp.com/users/getUserInfo/${userId}`);
+        const resp = axios.get(`https://health-communications-backend.onrender.com/users/getUserInfo/${userId}`);
 
         resp.then((response) => {
 
@@ -234,7 +234,7 @@ function DoctorSearch() {
             let pcpId = response.data[0].pcpDoc;
 
             // Get PCP information and set new fields of the data for the doc. to be accessed and displayed
-            return axios.get(`https://health-communications.herokuapp.com/doctors/getDoctorInfo/${pcpId}`)
+            return axios.get(`https://health-communications-backend.onrender.com/doctors/getDoctorInfo/${pcpId}`)
             .then((response) => {
 
                 let data = response.data[0];
@@ -269,7 +269,7 @@ function DoctorSearch() {
     const getDocsByFamilyName = async () => {
 
         // Get patient info
-        const resp = axios.get(`https://health-communications.herokuapp.com/users/getUserInfo/${userId}`);
+        const resp = axios.get(`https://health-communications-backend.onrender.com/users/getUserInfo/${userId}`);
 
         resp.then((response) => {
 
@@ -279,7 +279,7 @@ function DoctorSearch() {
             // Loop through this list to get all doctors specialized in each of these fields
             doctorStudyList.forEach(study => {
                
-                return axios.get(`https://health-communications.herokuapp.com/doctors/getDocByFieldOfStudy/${study}`)
+                return axios.get(`https://health-communications-backend.onrender.com/doctors/getDocByFieldOfStudy/${study}`)
                 .then((response) => {
 
                     let data = response.data;
@@ -319,7 +319,7 @@ function DoctorSearch() {
 
         var timeOff = "";
 
-        const resp = axios.get(`https://health-communications.herokuapp.com/schedule/getScheduled/${docPrimaryId}/${formatSelectedDate}`);
+        const resp = axios.get(`https://health-communications-backend.onrender.com/schedule/getScheduled/${docPrimaryId}/${formatSelectedDate}`);
 
         resp.then((response) => {
             
@@ -365,7 +365,7 @@ function DoctorSearch() {
         // If no validation errors exist, add a new appointment
         if(!emptyDateError && !noTimeSelected && !noTypeSelected) {
 
-            axios.post('https://health-communications.herokuapp.com/appointments/addAppointment', {
+            axios.post('https://health-communications-backend.onrender.com/appointments/addAppointment', {
                 userID: userId,
                 doctorID: docPrimaryId,
                 firstname: fName,

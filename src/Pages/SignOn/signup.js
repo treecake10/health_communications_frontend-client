@@ -95,7 +95,7 @@ function SignUp() {
 
       if(!firstNameError && !middleNameError && !lastNameError && !emailError && !passwordError) {
         
-        const response = await axios.post('https://health-communications.herokuapp.com/api/signup', { 
+        const response = await axios.post('https://health-communications-backend.onrender.com/api/signup', { 
 
           data: userData, 
           pcpDoc: "", 

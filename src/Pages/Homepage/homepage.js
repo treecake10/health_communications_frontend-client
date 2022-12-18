@@ -102,7 +102,7 @@ function Homepage() {
     const getAppointments = async () => {
 
         // Grab all appointment documents scheduled by the patient
-        await axios.get(`https://health-communications.herokuapp.com/appointments/getAppointment/${userID}`)
+        await axios.get(`https://health-communications-backend.onrender.com/appointments/getAppointment/${userID}`)
         .then((response) => {
 
             // Array declarations for sorting dates 
@@ -204,7 +204,7 @@ function Homepage() {
 
             let docId = e.doctorID;
 
-            axios.get(`https://health-communications.herokuapp.com/doctors/getDoctorInfo/${docId}`)
+            axios.get(`https://health-communications-backend.onrender.com/doctors/getDoctorInfo/${docId}`)
             .then((response) => {
 
                 let data = response.data;

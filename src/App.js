@@ -27,7 +27,7 @@ function App() {
       Verify the token. This is done by haveing a fetch
       request call a verification function in the back end.
     */ 
-    axios.get("https://health-communications.herokuapp.com/api/protected", {
+    axios.get("https://health-communications-backend.onrender.com/api/protected", {
       headers: {
         accessToken: localStorage.getItem("accessToken"),
       },
