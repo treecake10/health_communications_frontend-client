@@ -32,7 +32,7 @@ Email: demopatient@gmail.com
 Password: password
 ## Hosting
 
-![Login](https://client-health-comm.netlify.app/)
+[HostedSite](https://client-health-comm.netlify.app/)
 
 
 ## Screenshots
