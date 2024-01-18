@@ -30,9 +30,9 @@ details pending an approval status by the administrator, whether to accept or de
 Email: demopatient@gmail.com
 
 Password: password
-## Demo
+## Hosting
 
-https://stalwart-melba-ac0579.netlify.app/
+[https://stalwart-melba-ac0579.netlify.app/](https://client-health-comm.netlify.app/)
 
 
 ## Screenshots
