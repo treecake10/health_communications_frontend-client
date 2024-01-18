@@ -10,6 +10,8 @@ the patient will get back a list of available times to select which has filtered
 After a patient successfully makes an appointment request on the doctor selection page, the new request can be viewed on the homepage as an expandable accordion that contains all of the appointment 
 details pending an approval status by the administrator, whether to accept or decline the appointment as a whole. 
 
+<br />
+
 ## Hosting
 
 [client-health-comm.netlify.app](https://client-health-comm.netlify.app/)
@@ -18,6 +20,8 @@ details pending an approval status by the administrator, whether to accept or de
 Email: demopatient@gmail.com
 
 Password: password
+
+<br />
 
 ## Frontend
 - React
@@ -30,6 +34,8 @@ Password: password
 - Express
 - Axios
 - MongoDB
+
+<br />
 
 ## Screenshots
 
@@ -67,6 +73,7 @@ Password: password
 ### Sorted Dates with Sorted Times
 ![SortedDateTimes](https://github.com/treecake10/health_communications_frontend-client/blob/main/screenshots/Screenshot%20(193).png?raw=true)
 
+<br />
 
 ## Authors
 
